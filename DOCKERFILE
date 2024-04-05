@@ -1,10 +1,11 @@
-FROM openjdk17:alpine
+FROM openjdk:17-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the packaged JAR file into the container at /app
-COPY /home/azureuser/myagent/_work/1/s/target/demo-0.0.1-SNAPSHOT.war.original /app/springinitializer
+# Copy the packaged WAR file into the container at /app
+COPY demo-0.0.1-SNAPSHOT.war.original /app/
 
 # Expose the port that your Spring Boot application uses
 EXPOSE 8080
+
