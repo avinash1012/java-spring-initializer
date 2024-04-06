@@ -9,8 +9,8 @@ spec:
   selector:
     app: app1-demo
   ports:
-    - port: 80
-      targetPort: 8080
+    - port: 8080
+      
 
 ---
 apiVersion: apps/v1
@@ -34,4 +34,4 @@ spec:
           image: avinash1012/java-spring-initializer:latest
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 80
+            - containerPort: 8080
