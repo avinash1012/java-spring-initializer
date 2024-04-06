@@ -32,6 +32,6 @@ spec:
       containers:
         - name: app1-demo
           image: avinash1012/java-spring-initializer:latest
-          imagepullpolicy: Always
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
